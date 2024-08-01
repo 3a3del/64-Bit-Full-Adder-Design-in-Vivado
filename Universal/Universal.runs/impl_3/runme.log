@@ -1,0 +1,231 @@
+
+*** Running vivado
+    with args -log Universal_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Universal_wrapper.tcl -notrace
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Universal_wrapper.tcl -notrace
+Command: open_checkpoint C:/Users/hp/Universal/Universal.runs/impl_3/Universal_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 238.355 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 223 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.264 . Memory (MB): peak = 1252.297 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.264 . Memory (MB): peak = 1252.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 136 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 136 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.2 (64-bit) build 2258646
+open_checkpoint: Time (s): cpu = 00:00:51 ; elapsed = 00:01:07 . Memory (MB): peak = 1252.297 ; gain = 1023.105
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.297 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 19a1a0c5c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.875 . Memory (MB): peak = 1342.180 ; gain = 89.883
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "wr_clk_period": no such variable
+ [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:13]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
+ [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
+ [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "rd_clk_period_2": no such variable
+ [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
+ [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:34]
+CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
+ [c:/Users/hp/Universal/Universal.runs/impl_3/.Xil/Vivado-5696-DESKTOP-9SQ9M3B/dbg_hub_CV.0/out/xsdbm.xdc:37]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1421.664 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1e090a4d1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:04:51 . Memory (MB): peak = 1421.664 ; gain = 79.484
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1e3bdce58
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:04:53 . Memory (MB): peak = 1421.664 ; gain = 79.484
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 13326b23c
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:04:53 . Memory (MB): peak = 1421.664 ; gain = 79.484
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 16 cells
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 14ea19994
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:04:54 . Memory (MB): peak = 1421.664 ; gain = 79.484
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 50 cells
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG clk_IBUF_BUFG_inst to drive 3649 load(s) on clock net clk_IBUF_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 5 BUFG optimization | Checksum: 1d00779d3
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:04:55 . Memory (MB): peak = 1421.664 ; gain = 79.484
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: 1e3283c3b
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:04:57 . Memory (MB): peak = 1421.664 ; gain = 79.484
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 1e3283c3b
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:04:58 . Memory (MB): peak = 1421.664 ; gain = 79.484
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1421.664 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1e3283c3b
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:04:58 . Memory (MB): peak = 1421.664 ; gain = 79.484
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=28.991 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 6 newly gated: 0 Total Ports: 12
+Ending PowerOpt Patch Enables Task | Checksum: 298ab3c58
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.222 . Memory (MB): peak = 1608.246 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 298ab3c58
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1608.246 ; gain = 186.582
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 298ab3c58
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1608.246 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 2 Warnings, 10 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:41 ; elapsed = 00:05:16 . Memory (MB): peak = 1608.246 ; gain = 355.949
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.183 . Memory (MB): peak = 1608.246 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hp/Universal/Universal.runs/impl_3/Universal_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1608.246 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file Universal_wrapper_drc_opted.rpt -pb Universal_wrapper_drc_opted.pb -rpx Universal_wrapper_drc_opted.rpx
+Command: report_drc -file Universal_wrapper_drc_opted.rpt -pb Universal_wrapper_drc_opted.pb -rpx Universal_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/hp/Universal/Universal.runs/impl_3/Universal_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1608.246 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1608.246 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1db9ffbda
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1608.246 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1608.246 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF] >
+
+	clk_IBUF_inst (IBUF.O) is locked to IOB_X1Y114
+	clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f55aa986
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1608.246 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: f55aa986
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1608.246 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 166d1dd84
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1608.246 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+65 Infos, 2 Warnings, 10 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  1 11:28:44 2024...

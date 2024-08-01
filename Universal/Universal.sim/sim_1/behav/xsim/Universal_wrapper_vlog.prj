@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Universal.srcs/sources_1/bd/Universal/ip/Universal_vio_0_0/sim/Universal_vio_0_0.v" \
+"../../../../Universal.srcs/sources_1/bd/Universal/ip/Universal_ila_0_0/sim/Universal_ila_0_0.v" \
+"../../../../Universal.srcs/sources_1/bd/Universal/sim/Universal.v" \
+"../../../../Universal.srcs/sources_1/bd/Universal/hdl/Universal_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
